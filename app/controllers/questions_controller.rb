@@ -3,6 +3,7 @@ class QuestionsController < ApplicationController
   end
 
   def answer
+    @words = params[:quiz]
     if params[:quiz] == "I am going to work!"
       @answer = "Great"
     elsif params[:quiz].include?('?')

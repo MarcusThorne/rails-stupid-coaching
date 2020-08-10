@@ -1,4 +1,13 @@
 <div class="response">
   <h1>Stupid Coaching</h1>
-  <p><%= @answer %></p>
+  <div class="grey">
+    <p id="question"><%= @words %><br>- You</p>
+  </div>
+  <div class="grey">
+    <p id="answer" ><%= @answer %><br>- Coach</p>
+  </div>
+
+  <p class="ask-again"><%= link_to 'Ask again', ask_path %></p>
 </div>
+
+<a href=""></a>
